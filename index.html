@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080a0b">
+  <meta name="description" content="Nuvia — a new dimension of intelligence. Explore an interactive, iridescent 3D experience.">
+  <title>Nuvia — Beyond artificial.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;550;600;650;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <script type="importmap">{"imports":{"react":"https://esm.sh/react@18.3.1","react/jsx-runtime":"https://esm.sh/react@18.3.1/jsx-runtime?external=react","react-dom":"https://esm.sh/react-dom@18.3.1?external=react","react-dom/client":"https://esm.sh/react-dom@18.3.1/client?external=react","three":"https://esm.sh/three@0.170.0","@react-three/fiber":"https://esm.sh/@react-three/fiber@8.17.10?external=react,react-dom,three","@react-three/drei":"https://esm.sh/@react-three/drei@9.117.3?external=react,react-dom,three,@react-three/fiber"}}</script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+  <script src="js/interface.js" defer></script>
+  <script src="https://gumroad.com/js/gumroad.js"></script>
+</head>
+<body>
+  <header class="site-header flex items-center justify-between">
+    <a href="#" class="brand" aria-label="Nuvia home"><span class="brand-symbol" aria-hidden="true">✳</span> nuvia<span class="brand-dot">®</span></a>
+    <nav class="desktop-nav flex items-center gap-9" aria-label="Main navigation">
+      <a href="#intelligence">Platform <span class="nav-plus">+</span></a>
+      <a href="#possibilities">Possibilities</a>
+      <a href="#about">Our vision</a>
+      <a class="gumroad-button" href="https://diyaeeddine.gumroad.com/l/xkpxoa?wanted=true" target="_blank">Buy Template ($25)</a>
+    </nav>
+    <a href="https://diyaeeddine.gumroad.com/l/xkpxoa" class="header-cta gumroad-button" target="_blank">Get Nuvia <span aria-hidden="true">↗</span></a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span></button>
+    <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile navigation" hidden><a href="#intelligence">Platform</a><a href="#possibilities">Possibilities</a><a href="#about">Our vision</a><a href="#contact">Let’s build ↗</a></nav>
+  </header>
+  <main>
+    <div class="experience" id="experience">
+      <div class="scene-sticky" aria-hidden="true">
+        <div class="scene-glow"></div>
+        <div id="sphere-fallback" class="sphere-fallback"></div>
+        <div id="scene-root"></div>
+        <div class="scene-grain"></div>
+      </div>
+      <section id="hero-section" class="hero-section">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="status-dot"></span> THE NEXT WAVE IS HERE <span class="eyebrow-line"></span></div>
+          <h1>Beyond artificial.<br>Truly <span class="accent">intelligent.</span></h1>
+          <p class="hero-description">Intelligence that moves with you.<br>Turn your boldest ideas into extraordinary possibilities<br class="desktop-break"> with a new dimension of AI.</p>
+          <div class="hero-actions flex items-center gap-7">
+            <a href="#contact" class="primary-button">Explore the possibilities <span aria-hidden="true">↗</span></a>
+            <button id="watch-film" class="film-button"><span class="play-icon" aria-hidden="true">▶</span> See it in motion</button>
+          </div>
+        </div>
+        <div class="hero-bottom"><a class="scroll-link" href="#intelligence"><span class="scroll-icon">↓</span> SCROLL TO GO BEYOND</a></div>
+      </section>
+      <section id="intelligence" class="intelligence-section">
+        <div class="section-topline"><span class="eyebrow">01 / A NEW STATE OF MIND</span></div>
+        <div class="transformation-copy"><h2>Always evolving.<br><span class="muted">Never ordinary.</span></h2><p>From a spark of inspiration to something remarkable.<br>Fluid enough to adapt. Powerful enough to transform.</p></div>
+        <div class="transformation-footer"><span>ONE INTELLIGENCE. INFINITE FORMS.</span><a href="#possibilities">Discover what’s possible <span>↘</span></a></div>
+      </section>
+    </div>
+    <section class="trusted-strip" aria-label="Built for forward-thinking teams"><p>FOR MINDS THAT<br>MOVE THE WORLD FORWARD.</p><div class="wordmark">✳ Layers</div><div class="wordmark wordmark-serif">Quotient</div><div class="wordmark">◈ Circooles</div><div class="wordmark wordmark-mono">/Sisyphus</div><div class="wordmark">⬡ Catalog</div></section>
+    <section id="possibilities" class="possibilities-section section-padding">
+      <div class="section-heading"><div><span class="eyebrow">02 / IMAGINATION, AMPLIFIED</span><h2>Less limits.<br>More <span class="accent">what if.</span></h2></div><p>A different way to think, create, and connect.<br>Made for the possibilities you haven’t imagined yet.</p></div>
+      <div class="feature-grid grid md:grid-cols-3 gap-5">
+        <article class="feature-card"><div class="feature-visual visual-connect"><i></i><i></i><i></i><span>✳</span></div><span class="card-number">01 — THINK</span><h3>Connect the unexpected.</h3><p>Find a fresh perspective. Bring scattered ideas together and see the bigger picture.</p></article>
+        <article class="feature-card"><div class="feature-visual visual-create"><span></span><span></span><span></span><span></span></div><span class="card-number">02 — CREATE</span><h3>Make your next leap.</h3><p>Go beyond the blank page. Explore new directions and give your imagination room to move.</p></article>
+        <article class="feature-card"><div class="feature-visual visual-evolve"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><span class="card-number">03 — EVOLVE</span><h3>Grow into what’s next.</h3><p>Keep moving forward. An adaptable approach to intelligence, shaped around your ambition.</p></article>
+      </div>
+    </section>
+    <section id="about" class="vision-section section-padding"><span class="eyebrow">03 / THE HUMAN SIDE OF AI</span><h2>Technology should never<br>replace your imagination.<br><span class="accent">It should set it free.</span></h2><p>We believe the most interesting future isn’t artificial.<br>It’s the one we create together.</p><span class="vision-mark" aria-hidden="true">✳</span></section>
+    <section id="contact" class="contact-section section-padding"><div><span class="eyebrow">YOUR NEXT CHAPTER STARTS HERE</span><h2>What will you<br><span class="accent">imagine next?</span></h2></div><div class="contact-content"><p>Be part of a new dimension of intelligence.<br>Leave your email to save your interest on this device.</p><form id="interest-form"><label class="sr-only" for="email">Your email address</label><div class="email-field"><input type="email" id="email" autocomplete="email" placeholder="Your email address" required maxlength="254"><button type="submit" aria-label="Save my interest">↗</button></div><p id="form-status" role="status">Concept experience. No email is sent or collected remotely.</p></form></div></section>
+  </main>
+  <footer class="site-footer"><a href="#" class="brand"><span class="brand-symbol" aria-hidden="true">✳</span> nuvia<span class="brand-dot">®</span></a><span>© 2026 Nuvia. A concept of what comes next.</span><a href="#hero-section">Back to the top ↑</a></footer>
+  <dialog id="motion-dialog"><button class="dialog-close" aria-label="Close preview">×</button><span class="eyebrow">A LIVE EXPERIMENT</span><h2>Intelligence in motion.</h2><p>No pre-rendered film. No limits to the perspective.<br>This is a real-time 3D experience, rendered in your browser.</p><div class="dialog-orb" aria-hidden="true"></div><p class="dialog-instructions">Move your cursor around the sphere.<br>Scroll to watch glass become chrome.</p><button id="start-experience" class="primary-button">Experience the transformation <span>↓</span></button></dialog>
+  <script src="js/scene.js" defer></script>
+</body>
+</html>
